@@ -1,0 +1,27 @@
+{
+  "name": "nep-living",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "migrate:security": "node backend/migrate-security.js",
+    "user:role": "node backend/set-role.js",
+    "test:security": "node --test backend/security.test.js",
+    "test:security:mysql": "node --test backend/security-mysql.test.js",
+    "dev": "vite frontend",
+    "server": "node backend/server.js",
+    "seed": "node backend/seed.js",
+    "build": "vite build frontend --outDir ../dist --emptyOutDir"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "dotenv": "^17.4.2",
+    "express": "latest",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "mysql2": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}

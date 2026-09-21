@@ -1,0 +1,109 @@
+.service-detail-body {
+  max-width: 1600px;
+  margin: 120px auto 0;
+  padding: 90px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.service-detail-body h2 {
+  font-size: clamp(45px, 5vw, 75px);
+  margin: 18px 0;
+}
+.service-copy {
+  max-width: 480px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.service-copy p {
+  margin-bottom: 25px;
+}
+.service-steps {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 75px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.service-steps div {
+  border-top: 2px solid var(--ink);
+  padding: 18px;
+}
+.service-steps b {
+  display: block;
+  color: var(--gold);
+  font: 12px var(--serif);
+}
+.service-steps strong {
+  display: block;
+  font: 22px var(--serif);
+  margin: 22px 0 9px;
+}
+.service-steps span {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.service-detail-body h2 {
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 1.35;
+  max-width: 650px;
+}
+.service-faq {
+  max-width: 1000px;
+  margin: 110px auto 0;
+  padding: 70px 0;
+  border-top: 1px solid var(--line);
+}
+.service-faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+.service-faq summary {
+  cursor: pointer;
+  list-style: none;
+  font: 22px var(--serif);
+  display: flex;
+  justify-content: space-between;
+}
+.service-faq summary:after {
+  content: "+";
+  font: 24px var(--sans);
+  color: var(--gold);
+}
+.service-faq details[open] summary:after {
+  content: "−";
+}
+.service-faq details p {
+  max-width: 650px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 16px 0 0;
+}
+@media (max-width: 800px) {
+  .service-detail-body {
+    display: block;
+    margin-top: 75px;
+    padding: 65px 0;
+  }
+  .service-copy {
+    margin-top: 38px;
+  }
+  .service-steps {
+    grid-template-columns: 1fr;
+    padding: 55px 0 0;
+  }
+  .service-steps div {
+    padding: 18px 0;
+  }
+  .service-faq {
+    margin-top: 75px;
+    padding: 55px 0;
+  }
+  .service-faq summary {
+    font-size: 18px;
+  }
+}
